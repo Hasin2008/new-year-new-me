@@ -18,10 +18,6 @@
     color: white;
 }
 
-.banner-content span {
-    padding-left: 160px;
-}
-
 .banner-content p {
     width: 60%;
     font-family: 'Work Sans';
@@ -65,6 +61,12 @@
 
 .failure-content p {
     width: 80%;
+    line-height: 24px;
+    font-family: 'Work Sans';
+}
+
+.failure-bullet-point {
+    line-height: 32px;
     font-family: 'Work Sans';
 }
 
@@ -164,12 +166,12 @@
     width: 40%;
 }
 
-.footer-content .icon{
+.footer-content .icon {
     display: flex;
     gap: 20px;
 }
 
-.icon i{
+.icon i {
     font-size: 32px;
     border-radius: 40px;
 }
@@ -180,13 +182,13 @@
     bottom: 200px;
 }
 
-.footer-subscription p{
+.footer-subscription p {
     font-size: 28px;
     font-weight: 600;
     font-family: 'Work Sans';
 }
 
-.footer-subscription form{
+.footer-subscription form {
     width: 250px;
     border: 1px solid white;
     border-radius: 10px;
@@ -194,7 +196,7 @@
     font-size: 16px;
 }
 
-.footer-subscription button{
+.footer-subscription button {
     margin-top: 12px;
     width: 140px;
     height: 52px;
@@ -203,4 +205,89 @@
     font-size: 16px;
     font-weight: 600;
     color: white;
+}
+
+/* responsive media query */
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+
+    .failure,
+    .plan-container,
+    .banner-content {
+        flex-direction: column;
+    }
+
+    .banner-image img {
+        width: 120%;        
+        position: relative;
+    }
+
+    .banner-image .banner-content {
+        position: absolute;
+        left: 220px;
+        bottom: 360px;
+    }
+
+    .banner-content h2 {
+        font-size: 10px;
+        font-weight: 600;
+        font-family: 'Work Sans';
+        color: white;
+    }
+
+    .banner-content p {
+        width: 100%;
+        font-family: 'Work Sans';
+        font-size: 6px;
+        color: white;
+    }
+
+    .banner-content button {
+        width: 60px;
+        height: 20px;
+        border-radius: 5px;
+        border: none;
+        color: rgb(0, 95, 172);
+        font-size: 6px;
+        font-weight: bold;
+        font-family: 'Work Sans';
+        position: absolute;
+        right: 40px;
+    }
+
+    .failure img {
+        width: 300px;
+        height: 350px;
+    }
+
+    .failure-content h2 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .failure-content p {
+        width: 300px;
+        color: rgb(21, 20, 20)
+    }
+
+    .failure-bullet-point {
+        font-size: 16px;
+        font-weight: 400;
+        width: 200%;
+        color: rgb(21, 20, 20)
+    }
+
+    .plan h2 {
+        font-size: 24px;
+        padding-left: 80px;
+        margin-top: 92px;
+    }
+
+    .plan-container {
+        padding-right: 40px;
+    }
+
 }
