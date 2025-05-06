@@ -214,14 +214,14 @@
 
 @media screen and (max-width: 576px) {
 
+    .banner-content,
     .failure,
-    .plan-container,
-    .banner-content {
+    .plan-container {
         flex-direction: column;
     }
 
     .banner-image img {
-        width: 120%;        
+        width: 120%;
         position: relative;
     }
 
@@ -276,18 +276,84 @@
     .failure-bullet-point {
         font-size: 16px;
         font-weight: 400;
-        width: 200%;
+        width: 240%;
         color: rgb(21, 20, 20)
     }
 
     .plan h2 {
         font-size: 24px;
-        padding-left: 80px;
+        padding-left: 90px;
         margin-top: 92px;
     }
 
     .plan-container {
         padding-right: 40px;
+    }
+
+    .poster img {
+        width: 310px;
+        height: 120px;
+        position: relative;
+    }
+
+    .poster .poster-gradient {
+        position: absolute;
+        top: 2360px;
+        left: 6px;
+    }
+
+    .poster .poster-content {
+        position: absolute;
+        top: 2480px;
+        left: 100px;
+    }
+
+    .poster h2 {
+        width: 100%;
+        font-size: 12px;
+        font-weight: 700;
+        font-family: 'Work Sans';
+        color: white;
+    }
+
+    .poster button {
+        width: 72px;
+        height: 24px;
+        border-radius: 5px;
+        border: none;
+        color: rgb(0, 95, 172);
+        font-size: 10px;
+        font-weight: bold;
+        font-family: 'Work Sans';
+    }
+
+    .footer {
+        width: 1200px;
+        height: 700px;
+        position: relative;
+    }
+
+    .footer-content {
+        padding-top: 20px;
+        padding-left: 100px;
+    }
+
+    .footer-content p {
+        width: 220px;
+    }
+
+    .footer-subscription {
+        position: absolute;
+        top: 400px;
+        left: 100px;
+    }
+
+    .footer-subscription form {
+        width: 200px;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 16px;
+        font-size: 16px;
     }
 
 }
